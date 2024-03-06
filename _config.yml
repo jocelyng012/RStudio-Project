@@ -1,5 +1,8 @@
+remote_theme: pages-themes/dinky@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
 title: Jocelyn Guan
 description: RStudio projects
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-cayman
+show_downloads: false
+google_analytics: [Your Google Analytics tracking ID]
