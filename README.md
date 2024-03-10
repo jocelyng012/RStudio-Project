@@ -83,13 +83,13 @@ Outcome table:
   - Visualization of data such as Bar plot, Histogram, Box plot, and scatterplot, etc
   - Add a line of best fit in scatterplot
 
-
+Example charts:
 <div class="image-row">
-  <img src="z_img/barplot.png" width="200" height="200" >
-  <img src="z_img/histogram.png" width="200" height="200" >
+  <img src="z_img/barplot.png" width="250" height="250" >
+  <img src="z_img/histogram.png" width="250" height="250" >
 </div>
 
 <div class="image-row">
-  <img src="z_img/boxplot.png" width="200" height="200" >
-  <img src="z_img/scatterplot.png" width="200" height="200" >
+  <img src="z_img/boxplot.png" width="250" height="250" >
+  <img src="z_img/scatterplot.png" width="250" height="250" >
 </div>
