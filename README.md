@@ -1,8 +1,13 @@
 # RStudio-Project
 
-RStudio projects (EC 320 at the University of Oregon)
+Under the supervision of instructors Andrew Dickinson and Colleen O'Briant, I completed RStudio projects for EC 320 at the University of Oregon. These projects were completed by the programming language for statistical computing and graphics - RStudio.
+<br>
+<br>
 
 Below is the overview of the projects:
+<br>
+<br>
+
 
 ***Tibble***
   - Intro to tidyverse table functions
@@ -48,7 +53,37 @@ tibble(
 
 
 ***lm***
+  - Using ```lm()``` to estimate models with: log transformations, categorical variables using dummies, and interactions between variables, etc
+  - ```broom:tidy``` and ```broom:glance()```
 
+Example ```broom:tidy```:
+```shell
+lm(lifeExp ~ gdpPercap, data = gapminder) %>%
+  broom::tidy(conf.int = TRUE)
+```
+
+```shell
+# A tibble: 2 × 7
+  term         estimate std.error statistic   p.value  conf.low conf.high
+  <chr>           <dbl>     <dbl>     <dbl>     <dbl>     <dbl>     <dbl>
+1 (Intercept) 54.0      0.315         171.  0         53.3      54.6     
+2 gdpPercap    0.000765 0.0000258      29.7 3.57e-156  0.000714  0.000815
+```
+<br>
+<br>
+
+
+***line of best fit***
+  - Express the relationship in the given scatter plot of different data points
+
+Example:
+```shell
+students %>%
+  ggplot(aes(x = grade1, y = final_grade)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+  <img src="z_img/10.png" width="300" height="300" >
 <br>
 <br>
 
@@ -58,8 +93,7 @@ tibble(
   - Analyze data using ```filter()```, ```arrange()```, and ```mutate()```, etc
   - Combine two or more Tibbles by ```bind_rows()```, ```bind_cols()```, and ```left_join()```, etc
 
-
-EX: What percentage of A students study for more than 10H per week?
+EX: What percentage of A students study for more than 10 hours per week?
 ```shell
 students %>%
   filter(final_grade >= 90) %>%
@@ -82,7 +116,7 @@ Outcome table:
 
 
 ***ggplot2***
-  - Visualization of data such as Bar plot, Histogram, Box plot, and scatterplot, etc
+  - Visualization of data such as Bar plot, Histogram, Box plot, and scatter plot, etc
   - Add a line of best fit in scatterplot
 
 Example plots:
@@ -113,6 +147,3 @@ Examples plots:
   <img src="z_img/3.png" width="250" height="250" >
   <img src="z_img/4.png" width="250" height="250" >
 </div>
-<br>
-<br>
-
