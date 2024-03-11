@@ -52,6 +52,7 @@ tibble(
 <br>
 <br>
 
+
 ***dplyr***
   - dplyr functions such as ```summarize()``` and ```group_by()```
   - Analyze data using ```filter()```, ```arrange()```, and ```mutate()```, etc
@@ -79,11 +80,12 @@ Outcome table:
 <br>
 <br>
 
+
 ***ggplot2***
   - Visualization of data such as Bar plot, Histogram, Box plot, and scatterplot, etc
   - Add a line of best fit in scatterplot
 
-Example charts:
+Example plots:
 <div class="image-row">
   <img src="z_img/barplot.png" width="250" height="250" >
   <img src="z_img/histogram.png" width="250" height="250" >
@@ -93,3 +95,24 @@ Example charts:
   <img src="z_img/boxplot.png" width="250" height="250" >
   <img src="z_img/scatterplot.png" width="250" height="250" >
 </div>
+<br>
+<br>
+
+
+***ggplot - aes, geom***
+  - Aesthetic mappings: map variables in the plot to different axes or different colors
+  - Geom: Added the plot + as cayers
+
+Examples plots:
+<div class="image-row">
+  <img src="z_img/1.png" width="250" height="250" >
+  <img src="z_img/2.png" width="250" height="250" >
+</div>
+
+<div class="image-row">
+  <img src="z_img/3.png" width="250" height="250" >
+  <img src="z_img/4.png" width="250" height="250" >
+</div>
+<br>
+<br>
+
